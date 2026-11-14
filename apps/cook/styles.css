@@ -105,3 +105,29 @@ footer{border-top:1px solid #dfe2d7;padding:25px max(6%,calc((100% - 1200px)/2))
 .apps-link{margin-top:22px}
 #collection{padding-top:24px}
 @media(max-width:700px){.apps-link{margin-top:16px}#collection{padding-top:20px}}
+/* Paleta clara y azul para el recetario. */
+:root{background:#fafbfc;color:#16191d}
+.search-area label,.filter-switch,.match-mode,.tag-option,.back-button,.apps-link{color:#202b38}
+.search-wrap,.recipe-card,.tag-option,.match-mode select{border-color:#d5dbe1}
+.search-wrap input,.match-mode select{color:#16191d}
+.search-wrap input::placeholder{color:#65717d}
+.search-wrap>span:first-child,.search-hint,.section-heading>p,.focus-subtitle,.progress,.tag-list legend{color:#596876}
+.eyebrow,.card-tag,.step-number{color:#315e89}
+.eyebrow span{background:#315e89}
+.card-tag+.card-tag:before{color:#9ba9b5}
+.focus-button,.step input:checked,.switch input:checked+.switch-track{background:#315e89;border-color:#315e89}
+.focus-button:hover{background:#254967}
+.back-button,.apps-link{color:#244e75;border-color:#a8b8c7}
+.back-button:hover,.apps-link:hover{background:#edf3f8}
+.tag-option input{accent-color:#315e89}
+.steps-note{background:#eef3f7;border-color:#d3dfe8}
+.step input:checked~span{color:#64717c}
+.ingredients li span:last-child{color:#4d5359;white-space:normal}
+@media(max-width:700px){
+  .search-wrap input{font-size:16px}
+  .filter-switch,.tag-option,.back-button,.focus-button,.apps-link{font-size:16px}
+  .match-mode,.focus-subtitle,.progress{font-size:14px}
+  .ingredients li{font-size:15px}
+  .step label{font-size:16px}
+  .card-tag{font-size:10px}
+}
