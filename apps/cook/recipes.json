@@ -1,0 +1,84 @@
+{
+  "recetas": [
+    {
+      "nombre": "Puré de merluza",
+      "tags": [
+        "bebible",
+        "SII"
+      ],
+      "ingredientes": [
+        {
+          "nombre": "Merluza congelada",
+          "cantidad_min": 400,
+          "cantidad_max": 500,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Copos de patata (1 sobre)",
+          "cantidad": 125,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "cucharadita colmada"
+        }
+      ],
+      "preparacion": [
+        "Poner a hervir 1 litro de agua con la sal, añadir la merluza congelada y, cuando vuelva a romper el hervor, contar 5 minutos.",
+        "Triturar la merluza cocida, añadir 1 litro más de agua  y verter los copos de patata poco a poco sin dejar de batir hasta obtener la textura deseada."
+      ]
+    },
+    {
+      "nombre": "Caldo de pollo",
+      "tags": [
+        "bebible",
+        "SII"
+      ],
+      "ingredientes": [
+        {
+          "nombre": "Muslos de pollo",
+          "cantidad_min": 500,
+          "cantidad_max": 600,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "cucharadita colmada"
+        }
+      ],
+      "preparacion": [
+        "Poner los muslos en una olla con 3 litros de agua fría y la sal, y llevar a ebullición a fuego fuerte. Al hervir, retirar la espuma superficial si la hubiera, bajar a fuego medio-bajo y cocer tapado durante 45-60 minutos para extraer toda la sustancia.",
+        "Sacar los muslos, dejarlos templar hasta poder manipularlos sin quemarse, retirar piel y huesos y desmenuzar o trocear la carne.",
+        "Devolver el pollo troceado a la olla y darle un hervor suave de 3 a 5 minutos para higienizar la carne tras haberla manipulado.",
+        "Apagar el fuego y retirar únicamente caldo solo (para tomar bebible o guardar) hasta que el nivel del líquido quede justo a ras de la carne. Envasar el resto como raciones de caldo con pollo."
+      ]
+    },
+    {
+      "nombre": "Arroz cocido para una persona",
+      "tags": [
+        "acompañamiento",
+        "SII"
+      ],
+      "ingredientes": [
+        {
+          "nombre": "Arroz",
+          "cantidad": 4,
+          "unidad": "cucharadas soperas colmadas"
+        },
+        {
+          "nombre": "Agua",
+          "cantidad": 120,
+          "unidad": "ml aproximadamente (algo más de medio vaso de 200 ml)"
+        }
+      ],
+      "preparacion": [
+        "Poner el agua a hervir en un cazo pequeño. Como referencia, usa aproximadamente el doble de volumen de agua que de arroz; ajusta la cantidad según la variedad y las indicaciones del paquete.",
+        "Añadir el arroz, remover una vez y bajar el fuego al mínimo para mantener un hervor suave. Tapar el cazo.",
+        "Cocer sin remover durante unos 15-18 minutos, o el tiempo indicado en el paquete, hasta que el arroz esté tierno y haya absorbido el agua. Si se seca antes de estar hecho, añadir un poco de agua caliente.",
+        "Apagar el fuego y dejar reposar tapado 5 minutos. Soltar el arroz con un tenedor y añadir después el pollo con su caldo."
+      ]
+    }
+  ]
+}

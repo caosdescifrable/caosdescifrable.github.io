@@ -1,0 +1,25 @@
+/* Estilos compartidos por las aplicaciones. */
+*{box-sizing:border-box}
+body{margin:0}
+button{cursor:pointer}
+.search-wrap:focus-within{outline:2px solid #768e77;outline-offset:2px}
+.section-heading{border-bottom:1px solid #dce1d6;display:flex;justify-content:space-between;align-items:end;padding-bottom:18px;margin-bottom:24px}
+[hidden]{display:none!important}
+.filter-switch{display:flex;align-items:center;gap:12px;color:#506151;font-size:14px;font-weight:700}
+.switch input{position:absolute;opacity:0;width:1px;height:1px}
+.switch-track:after{content:'';display:block;width:22px;height:22px;margin:3px;background:white;border-radius:50%;transition:transform .2s}
+.switch input:checked+.switch-track{background:#405e45}
+.switch input:checked+.switch-track:after{transform:translateX(20px)}
+.switch input:focus-visible+.switch-track{outline:2px solid #b97050;outline-offset:3px}
+.tag-option input{width:18px;height:18px;margin:0;accent-color:#405e45}
+.apps-link:hover{background:#edf2e9}
+.apps-link:focus-visible{outline:2px solid #405e45;outline-offset:3px}
+:root{font-family:Arial,sans-serif;color:#26372d;background:#f6f5ef}
+.shell{max-width:1200px;margin:auto}
+.search-wrap{display:flex;align-items:center;background:white;border:1px solid #dce1d6;padding:0 20px;gap:14px}
+.search-wrap input{border:0;outline:0;min-width:0;flex:1;color:#26372d;background:transparent;font-size:15px}
+.switch{display:inline-flex;position:relative;cursor:pointer;padding:4px}
+.switch-track{display:block;width:48px;height:28px;background:#cbd5c8;border-radius:20px}
+.tag-option{display:inline-flex;align-items:center;border:1px solid #dce2d7;font-size:14px;cursor:pointer}
+.match-mode{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:16px;color:#506151;font-size:13px}
+.apps-link{display:inline-flex;align-items:center;min-height:48px;padding:10px 16px;background:#fff;border:1px solid #bac9b8;border-radius:4px;color:#35523a;text-decoration:none;font-size:14px;font-weight:700}

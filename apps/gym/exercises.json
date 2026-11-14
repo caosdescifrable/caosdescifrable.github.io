@@ -1,0 +1,307 @@
+{
+  "ejercicios": [
+    {
+      "id": "flexiones",
+      "nombre": "Flexiones",
+      "zonas": [
+        "superior",
+        "brazos"
+      ],
+      "musculos": [
+        "pecho",
+        "tríceps",
+        "hombros"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": 8,
+      "series": 3,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Apoya las manos algo más abiertas que los hombros y mantén el cuerpo alineado. Baja el pecho de forma controlada y empuja el suelo para subir. Si lo necesitas, apoya las manos en una superficie elevada.",
+      "errores": "Evita hundir la cadera, elevarla demasiado o abrir los codos en exceso."
+    },
+    {
+      "id": "curl-martillo",
+      "nombre": "Curl de bíceps martillo",
+      "zonas": [
+        "superior",
+        "brazos"
+      ],
+      "musculos": [
+        "bíceps",
+        "antebrazos"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "mancuernas",
+        "mochilas"
+      ],
+      "repeticiones": 12,
+      "series": 3,
+      "peso": null,
+      "gif": null,
+      "descripcion": "De pie, sujeta una mancuerna en cada mano con las palmas mirando hacia el cuerpo. Flexiona los codos y baja despacio. Con mochilas, usa asas seguras que permitan mantener ese agarre neutro; puedes trabajar un brazo cada vez.",
+      "errores": "Evita balancear el cuerpo, encoger los hombros o doblar las muñecas."
+    },
+    {
+      "id": "extension-triceps",
+      "nombre": "Extensión de tríceps sobre la cabeza",
+      "zonas": [
+        "superior",
+        "brazos"
+      ],
+      "musculos": [
+        "tríceps"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "mancuernas",
+        "mochilas"
+      ],
+      "repeticiones": 12,
+      "series": 3,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Sujeta una mancuerna con ambas manos sobre la cabeza. Flexiona los codos para bajar el peso detrás de la cabeza y extiéndelos de forma controlada. También puedes usar una mochila compacta, bien cerrada y con agarre firme.",
+      "errores": "Evita arquear la espalda o abrir los codos en exceso. No uses la mochila sobre la cabeza si no puedes sujetarla con seguridad."
+    },
+    {
+      "id": "press-hombros",
+      "nombre": "Press de hombros",
+      "zonas": [
+        "superior",
+        "brazos"
+      ],
+      "musculos": [
+        "hombros",
+        "tr?ceps"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "mancuernas",
+        "botellas"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Sujeta el pack de botellas con ambas manos a la altura del pecho y emp?jalo hacia arriba hasta estirar los brazos. Baja despacio hasta una altura c?moda. La versi?n habitual tambi?n se hace con mancuernas.",
+      "errores": "Evita impulsarte, arquear demasiado la espalda o forzar los codos al llegar arriba. Aseg?rate de que el pack est? bien sujeto."
+    },
+    {
+      "id": "elevacion-lateral",
+      "nombre": "Elevaci?n lateral hasta arriba",
+      "zonas": [
+        "superior",
+        "brazos"
+      ],
+      "musculos": [
+        "hombros"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "mancuernas",
+        "botellas"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "De pie, sujeta una botella ligera en cada mano junto a los muslos. Eleva los brazos hacia los lados, ligeramente por delante del cuerpo, hasta la altura de los hombros y haz una pausa breve. Contin?a hasta acercar las botellas por encima de la cabeza y baja despacio por el mismo recorrido.",
+      "errores": "Evita balancearte, arquear la espalda o forzar la altura. Deja que los om?platos se muevan naturalmente, usa poco peso y reduce el recorrido si aparece dolor o molestias."
+    },
+    {
+      "id": "plancha-frontal",
+      "nombre": "Plancha frontal",
+      "zonas": [
+        "core"
+      ],
+      "musculos": [
+        "abdominales"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Apoya los antebrazos y las puntas de los pies, con los codos bajo los hombros. Mant?n cabeza, tronco y piernas alineados, activa suavemente abdomen y gl?teos y respira con normalidad. Aguanta mientras mantengas una postura c?moda; si lo necesitas, apoya las rodillas.",
+      "errores": "Evita hundir la cintura, subir demasiado la cadera o aguantar la respiraci?n. Termina cuando ya no puedas mantener la postura con control."
+    },
+    {
+      "id": "remo-mochila",
+      "nombre": "Remo con mochila",
+      "zonas": [
+        "superior",
+        "espalda",
+        "brazos"
+      ],
+      "musculos": [
+        "dorsales",
+        "trapecio medio",
+        "b?ceps"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "mochilas",
+        "mancuernas"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Sujeta la mochila por un asa firme. Inclina el torso desde las caderas con las rodillas ligeramente dobladas y apoya la mano libre en una superficie estable. Lleva el codo hacia atr?s y la mochila hacia el costado; baja despacio y repite con el otro brazo. Tambi?n puedes usar una mancuerna.",
+      "errores": "Evita girar el tronco, dar tirones o encoger el hombro hacia la oreja. Mant?n la espalda estable y usa una carga controlable."
+    },
+    {
+      "id": "elevaciones-t-y",
+      "nombre": "Elevaciones en T e Y boca abajo",
+      "zonas": [
+        "superior",
+        "espalda"
+      ],
+      "musculos": [
+        "trapecio medio",
+        "trapecio inferior",
+        "hombros"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Túmbate boca abajo con la frente apoyada en una toalla. Para la T, abre los brazos a los lados con los pulgares hacia arriba, el?valos un poco y baja despacio. Para la Y, coloca los brazos en diagonal hacia delante y repite. Empieza sin peso y con pocas repeticiones c?modas.",
+      "errores": "Evita forzar la altura, tensar el cuello o encoger deliberadamente los hombros. Reduce el recorrido o para si aparece dolor."
+    },
+    {
+      "id": "nadador-boca-abajo",
+      "nombre": "Nadador boca abajo",
+      "zonas": [
+        "superior",
+        "espalda"
+      ],
+      "musculos": [
+        "trapecio medio",
+        "trapecio inferior",
+        "romboides",
+        "hombros"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "T?mbate boca abajo con el pecho y la frente apoyados. Extiende los brazos hacia delante y el?valos ligeramente si puedes hacerlo con comodidad. Traza un c?rculo lento llevando las manos hacia las caderas y vuelve al frente. Deja que las esc?pulas se muevan con naturalidad. Puedes usar una cama firme si permite mover los brazos sin obst?culos.",
+      "errores": "Evita forzar la altura de los brazos, tensar el cuello, arquear la zona lumbar o bloquear las esc?pulas. Reduce el recorrido o para si aparece dolor."
+    },
+    {
+      "id": "puente-gluteos",
+      "nombre": "Puente de gl?teos",
+      "zonas": [
+        "inferior",
+        "piernas"
+      ],
+      "musculos": [
+        "gl?teos",
+        "isquiotibiales"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "T?mbate boca arriba con las rodillas dobladas y los pies apoyados. Eleva la cadera hasta que quede aproximadamente alineada con los hombros y las rodillas; baja despacio y repite.",
+      "errores": "Evita arquear la zona lumbar o subir la cadera m?s de lo necesario. Mant?n el movimiento controlado y respira."
+    },
+    {
+      "id": "sentarse-levantarse",
+      "nombre": "Sentarse y levantarse con mochila",
+      "zonas": [
+        "inferior",
+        "piernas"
+      ],
+      "musculos": [
+        "cu?driceps",
+        "gl?teos"
+      ],
+      "lugares": [
+        "casa",
+        "gym"
+      ],
+      "material": [
+        "peso corporal",
+        "mochilas"
+      ],
+      "repeticiones": null,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Con los pies apoyados, si?ntate despacio en una silla estable o una cama firme y vuelve a levantarte de forma controlada. Empieza sin peso; cuando te resulte f?cil, puedes abrazar una mochila con poco peso cerca del pecho.",
+      "errores": "Evita dejarte caer sobre el asiento o usar una superficie que se desplace. Elige una altura y un recorrido c?modos."
+    }
+  ],
+  "megasets": [
+    {
+      "id": "casa-mochilas",
+      "nombre": "Casa con mochilas",
+      "descripcion": "Una vuelta por todo el cuerpo con peso corporal, mochilas y botellas.",
+      "ejercicios": [
+        "flexiones",
+        "curl-martillo",
+        "extension-triceps",
+        "press-hombros",
+        "elevacion-lateral",
+        "plancha-frontal",
+        "remo-mochila",
+        "elevaciones-t-y",
+        "nadador-boca-abajo",
+        "puente-gluteos",
+        "sentarse-levantarse"
+      ]
+    }
+  ]
+}

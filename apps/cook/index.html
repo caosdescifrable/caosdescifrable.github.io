@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>Mi recetario</title>
+  <link rel="stylesheet" href="../../styles.css"><link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <a class="apps-link" href="../../">← Aplicaciones</a>
+    <section id="collection">
+      <div class="search-area"><label for="search">BUSCAR UNA RECETA</label><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Busca por nombre..." autocomplete="off"><span class="search-hint">BUSCAR</span></div></div>
+      <div class="filters"><div class="filter-switch"><span id="filter-mode-label">Todas</span><label class="switch"><input id="filter-mode" type="checkbox" aria-labelledby="filter-mode-label filter-mode-filtered" aria-controls="tag-filters"><span class="switch-track" aria-hidden="true"></span></label><span id="filter-mode-filtered">Filtradas</span></div><div id="tag-filters" hidden><fieldset id="tags" class="tag-list"><legend>Elige las etiquetas</legend></fieldset><label class="match-mode" for="match-mode">Mostrar recetas que tengan <select id="match-mode"><option value="and">todas las etiquetas (AND)</option><option value="or">alguna etiqueta (OR)</option></select></label></div></div>
+      <div class="section-heading"><h2>Recetas</h2><p id="count" aria-live="polite"></p></div>
+      <div id="recipes" class="recipe-grid" aria-live="polite"><p class="loading">Cargando recetas...</p></div>
+    </section>
+    <section id="focus" hidden aria-label="Modo cocina"></section>
+  </main>
+</body>
+</html>
