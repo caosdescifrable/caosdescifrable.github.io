@@ -282,6 +282,199 @@
       "gif": null,
       "descripcion": "Con los pies apoyados, si?ntate despacio en una silla estable o una cama firme y vuelve a levantarte de forma controlada. Empieza sin peso; cuando te resulte f?cil, puedes abrazar una mochila con poco peso cerca del pecho.",
       "errores": "Evita dejarte caer sobre el asiento o usar una superficie que se desplace. Elige una altura y un recorrido c?modos."
+    },
+    {
+      "id": "estirar-gemelos-pared",
+      "nombre": "Gemelos contra la pared",
+      "zonas": [
+        "inferior",
+        "piernas"
+      ],
+      "musculos": [
+        "gemelos"
+      ],
+      "lugares": [
+        "fuera de casa",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": "10 por pierna",
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Apoya la parte delantera de la planta del pie contra la pared, con el tal?n en el suelo, y acerca el cuerpo suavemente hasta notar el estiramiento. Vuelve y repite con control.",
+      "errores": "Evita rebotar o empujar hasta sentir dolor; usa un apoyo si lo necesitas."
+    },
+    {
+      "id": "estirar-cuadriceps-de-pie",
+      "nombre": "Cu?driceps de pie",
+      "zonas": [
+        "inferior",
+        "piernas"
+      ],
+      "musculos": [
+        "cu?driceps"
+      ],
+      "lugares": [
+        "fuera de casa",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": "10 por pierna",
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "De pie, flexiona una rodilla y sujeta el empeine llevando el tal?n suavemente hacia el gl?teo. Suelta y repite; cambia de pierna. Puedes apoyarte en una pared.",
+      "errores": "Evita arquear la espalda, tirar del pie o forzar la rodilla."
+    },
+    {
+      "id": "pierna-flexionada-cadera",
+      "nombre": "Círculos de cadera con rodilla elevada",
+      "zonas": [
+        "inferior",
+        "piernas"
+      ],
+      "musculos": [
+        "cadera"
+      ],
+      "lugares": [
+        "fuera de casa",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": "10 por pierna",
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "De pie, levanta una pierna con la rodilla flexionada unos 90 grados. Dibuja círculos en el aire con la rodilla, moviendo la cadera despacio y con control. Repite con la otra pierna.",
+      "errores": "Ap?yate si necesitas equilibrio y utiliza un recorrido c?modo."
+    },
+    {
+      "id": "movimientos-cadera",
+      "nombre": "Movimientos de cadera",
+      "zonas": [
+        "inferior",
+        "core"
+      ],
+      "musculos": [
+        "cadera"
+      ],
+      "lugares": [
+        "fuera de casa",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": "10 ? 10 ? 1",
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Movimientos de cadera: 10 ? 10 ? 1.",
+      "errores": "Haz los movimientos despacio y dentro de un recorrido c?modo."
+    },
+    {
+      "id": "movimientos-natatorios",
+      "nombre": "Movimientos natatorios",
+      "zonas": [
+        "superior",
+        "espalda",
+        "brazos"
+      ],
+      "musculos": [
+        "hombros"
+      ],
+      "lugares": [
+        "fuera de casa",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": "15 de cada uno",
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Hacia delante, T-pose compuesta, pose inversa y hacia atr?s.",
+      "errores": "Hazlos con control y sin forzar el recorrido."
+    },
+    {
+      "id": "dead-bug",
+      "nombre": "Dead bug",
+      "zonas": [
+        "core"
+      ],
+      "musculos": [
+        "abdominales"
+      ],
+      "lugares": [
+        "cama",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": "20 en total (10 por pierna, alternando)",
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Tumbado boca arriba, eleva brazos y piernas con las rodillas flexionadas. Aleja despacio un brazo y la pierna contraria, vuelve al centro y alterna. Mant?n el tronco estable y respira.",
+      "errores": "Evita arquear la zona lumbar o forzar la amplitud; acorta el recorrido si lo necesitas."
+    },
+    {
+      "id": "pierna-arriba-tobillo",
+      "nombre": "Pierna arriba y movilidad de tobillo",
+      "zonas": [
+        "inferior",
+        "piernas"
+      ],
+      "musculos": [
+        "isquiotibiales",
+        "tobillos"
+      ],
+      "lugares": [
+        "cama",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": "5 de cada movimiento por pierna",
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Pierna hacia arriba: 5 c?rculos horarios de tobillo, 5 antihorarios, 5 hacia dentro, 5 hacia fuera y 5 extensiones m?ximas. Repite con la otra pierna.",
+      "errores": "Haz los movimientos suavemente, sin forzar la pierna ni el tobillo."
+    },
+    {
+      "id": "balanceo-rodillas-tumbado",
+      "nombre": "Balanceo de rodillas tumbado",
+      "zonas": [
+        "core"
+      ],
+      "musculos": [
+        "abdomen",
+        "espalda"
+      ],
+      "lugares": [
+        "cama",
+        "casa"
+      ],
+      "material": [
+        "peso corporal"
+      ],
+      "repeticiones": 20,
+      "series": null,
+      "peso": null,
+      "gif": null,
+      "descripcion": "Tumbado boca arriba, con las rodillas flexionadas y juntas, d?jalas caer suavemente hacia la izquierda y vuelve al centro; despu?s hacia la derecha y vuelve al centro.",
+      "errores": "No fuerces la amplitud; deja que el movimiento sea c?modo y controlado."
     }
   ],
   "megasets": [
@@ -301,6 +494,28 @@
         "nadador-boca-abajo",
         "puente-gluteos",
         "sentarse-levantarse"
+      ]
+    },
+    {
+      "id": "estiramientos-fuera",
+      "nombre": "Estiramientos fuera de casa",
+      "descripcion": "Movimientos y estiramientos para hacer fuera de casa.",
+      "ejercicios": [
+        "estirar-gemelos-pared",
+        "estirar-cuadriceps-de-pie",
+        "pierna-flexionada-cadera",
+        "movimientos-cadera",
+        "movimientos-natatorios"
+      ]
+    },
+    {
+      "id": "estiramientos-cama",
+      "nombre": "Estiramientos en cama",
+      "descripcion": "Movimientos y estiramientos para hacer en la cama.",
+      "ejercicios": [
+        "dead-bug",
+        "pierna-arriba-tobillo",
+        "balanceo-rodillas-tumbado"
       ]
     }
   ]
