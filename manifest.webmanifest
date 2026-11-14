@@ -1,12 +1,12 @@
 {
-  "id": "./",
-  "name": "Recetas",
-  "short_name": "Recetas",
-  "start_url": "./",
-  "scope": "./",
+  "id": "/",
+  "name": "Mis aplicaciones",
+  "short_name": "Mis apps",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f6f5ef",
-  "theme_color": "#f6f5ef",
+  "theme_color": "#6624c9",
   "icons": [
     {
       "src": "icon-192.png",
