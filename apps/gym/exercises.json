@@ -86,7 +86,7 @@
       ],
       "musculos": [
         "hombros",
-        "tr?ceps"
+        "tríceps"
       ],
       "lugares": [
         "casa",
@@ -100,12 +100,12 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Sujeta el pack de botellas con ambas manos a la altura del pecho y emp?jalo hacia arriba hasta estirar los brazos. Baja despacio hasta una altura c?moda. La versi?n habitual tambi?n se hace con mancuernas.",
-      "errores": "Evita impulsarte, arquear demasiado la espalda o forzar los codos al llegar arriba. Aseg?rate de que el pack est? bien sujeto."
+      "descripcion": "Sujeta el pack de botellas con ambas manos a la altura del pecho y empújalo hacia arriba hasta estirar los brazos. Baja despacio hasta una altura cómoda. La versión habitual también se hace con mancuernas.",
+      "errores": "Evita impulsarte, arquear demasiado la espalda o forzar los codos al llegar arriba. Asegúrate de que el pack está bien sujeto."
     },
     {
       "id": "elevacion-lateral",
-      "nombre": "Elevaci?n lateral hasta arriba",
+      "nombre": "Elevación lateral hasta arriba",
       "zonas": [
         "superior",
         "brazos"
@@ -125,8 +125,8 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "De pie, sujeta una botella ligera en cada mano junto a los muslos. Eleva los brazos hacia los lados, ligeramente por delante del cuerpo, hasta la altura de los hombros y haz una pausa breve. Contin?a hasta acercar las botellas por encima de la cabeza y baja despacio por el mismo recorrido.",
-      "errores": "Evita balancearte, arquear la espalda o forzar la altura. Deja que los om?platos se muevan naturalmente, usa poco peso y reduce el recorrido si aparece dolor o molestias."
+      "descripcion": "De pie, sujeta una botella ligera en cada mano junto a los muslos. Eleva los brazos hacia los lados, ligeramente por delante del cuerpo, hasta la altura de los hombros y haz una pausa breve. Continúa hasta acercar las botellas por encima de la cabeza y baja despacio por el mismo recorrido.",
+      "errores": "Evita balancearte, arquear la espalda o forzar la altura. Deja que los omóplatos se muevan naturalmente, usa poco peso y reduce el recorrido si aparece dolor o molestias."
     },
     {
       "id": "plancha-frontal",
@@ -148,8 +148,8 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Apoya los antebrazos y las puntas de los pies, con los codos bajo los hombros. Mant?n cabeza, tronco y piernas alineados, activa suavemente abdomen y gl?teos y respira con normalidad. Aguanta mientras mantengas una postura c?moda; si lo necesitas, apoya las rodillas.",
-      "errores": "Evita hundir la cintura, subir demasiado la cadera o aguantar la respiraci?n. Termina cuando ya no puedas mantener la postura con control."
+      "descripcion": "Apoya los antebrazos y las puntas de los pies, con los codos bajo los hombros. Mantén cabeza, tronco y piernas alineados, activa suavemente abdomen y glúteos y respira con normalidad. Aguanta mientras mantengas una postura cómoda; si lo necesitas, apoya las rodillas.",
+      "errores": "Evita hundir la cintura, subir demasiado la cadera o aguantar la respiración. Termina cuando ya no puedas mantener la postura con control."
     },
     {
       "id": "remo-mochila",
@@ -162,7 +162,7 @@
       "musculos": [
         "dorsales",
         "trapecio medio",
-        "b?ceps"
+        "bíceps"
       ],
       "lugares": [
         "casa",
@@ -176,8 +176,8 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Sujeta la mochila por un asa firme. Inclina el torso desde las caderas con las rodillas ligeramente dobladas y apoya la mano libre en una superficie estable. Lleva el codo hacia atr?s y la mochila hacia el costado; baja despacio y repite con el otro brazo. Tambi?n puedes usar una mancuerna.",
-      "errores": "Evita girar el tronco, dar tirones o encoger el hombro hacia la oreja. Mant?n la espalda estable y usa una carga controlable."
+      "descripcion": "Sujeta la mochila por un asa firme. Inclina el torso desde las caderas con las rodillas ligeramente dobladas y apoya la mano libre en una superficie estable. Lleva el codo hacia atrás y la mochila hacia el costado; baja despacio y repite con el otro brazo. También puedes usar una mancuerna.",
+      "errores": "Evita girar el tronco, dar tirones o encoger el hombro hacia la oreja. Mantén la espalda estable y usa una carga controlable."
     },
     {
       "id": "elevaciones-t-y",
@@ -202,7 +202,7 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Túmbate boca abajo con la frente apoyada en una toalla. Para la T, abre los brazos a los lados con los pulgares hacia arriba, el?valos un poco y baja despacio. Para la Y, coloca los brazos en diagonal hacia delante y repite. Empieza sin peso y con pocas repeticiones c?modas.",
+      "descripcion": "Túmbate boca abajo con la frente apoyada en una toalla. Para la T, abre los brazos a los lados con los pulgares hacia arriba, elévalos un poco y baja despacio. Para la Y, coloca los brazos en diagonal hacia delante y repite. Empieza sin peso y con pocas repeticiones cómodas.",
       "errores": "Evita forzar la altura, tensar el cuello o encoger deliberadamente los hombros. Reduce el recorrido o para si aparece dolor."
     },
     {
@@ -229,18 +229,18 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "T?mbate boca abajo con el pecho y la frente apoyados. Extiende los brazos hacia delante y el?valos ligeramente si puedes hacerlo con comodidad. Traza un c?rculo lento llevando las manos hacia las caderas y vuelve al frente. Deja que las esc?pulas se muevan con naturalidad. Puedes usar una cama firme si permite mover los brazos sin obst?culos.",
-      "errores": "Evita forzar la altura de los brazos, tensar el cuello, arquear la zona lumbar o bloquear las esc?pulas. Reduce el recorrido o para si aparece dolor."
+      "descripcion": "Túmbate boca abajo con el pecho y la frente apoyados. Extiende los brazos hacia delante y elévalos ligeramente si puedes hacerlo con comodidad. Traza un círculo lento llevando las manos hacia las caderas y vuelve al frente. Deja que las escápulas se muevan con naturalidad. Puedes usar una cama firme si permite mover los brazos sin obstáculos.",
+      "errores": "Evita forzar la altura de los brazos, tensar el cuello, arquear la zona lumbar o bloquear las escápulas. Reduce el recorrido o para si aparece dolor."
     },
     {
       "id": "puente-gluteos",
-      "nombre": "Puente de gl?teos",
+      "nombre": "Puente de glúteos",
       "zonas": [
         "inferior",
         "piernas"
       ],
       "musculos": [
-        "gl?teos",
+        "glúteos",
         "isquiotibiales"
       ],
       "lugares": [
@@ -254,8 +254,8 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "T?mbate boca arriba con las rodillas dobladas y los pies apoyados. Eleva la cadera hasta que quede aproximadamente alineada con los hombros y las rodillas; baja despacio y repite.",
-      "errores": "Evita arquear la zona lumbar o subir la cadera m?s de lo necesario. Mant?n el movimiento controlado y respira."
+      "descripcion": "Túmbate boca arriba con las rodillas dobladas y los pies apoyados. Eleva la cadera hasta que quede aproximadamente alineada con los hombros y las rodillas; baja despacio y repite.",
+      "errores": "Evita arquear la zona lumbar o subir la cadera más de lo necesario. Mantén el movimiento controlado y respira."
     },
     {
       "id": "sentarse-levantarse",
@@ -265,8 +265,8 @@
         "piernas"
       ],
       "musculos": [
-        "cu?driceps",
-        "gl?teos"
+        "cuádriceps",
+        "glúteos"
       ],
       "lugares": [
         "casa",
@@ -280,8 +280,8 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Con los pies apoyados, si?ntate despacio en una silla estable o una cama firme y vuelve a levantarte de forma controlada. Empieza sin peso; cuando te resulte f?cil, puedes abrazar una mochila con poco peso cerca del pecho.",
-      "errores": "Evita dejarte caer sobre el asiento o usar una superficie que se desplace. Elige una altura y un recorrido c?modos."
+      "descripcion": "Con los pies apoyados, siéntate despacio en una silla estable o una cama firme y vuelve a levantarte de forma controlada. Empieza sin peso; cuando te resulte fácil, puedes abrazar una mochila con poco peso cerca del pecho.",
+      "errores": "Evita dejarte caer sobre el asiento o usar una superficie que se desplace. Elige una altura y un recorrido cómodos."
     },
     {
       "id": "estirar-gemelos-pared",
@@ -304,18 +304,18 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Apoya la parte delantera de la planta del pie contra la pared, con el tal?n en el suelo, y acerca el cuerpo suavemente hasta notar el estiramiento. Vuelve y repite con control.",
+      "descripcion": "Apoya la parte delantera de la planta del pie contra la pared, con el talón en el suelo, y acerca el cuerpo suavemente hasta notar el estiramiento. Vuelve y repite con control.",
       "errores": "Evita rebotar o empujar hasta sentir dolor; usa un apoyo si lo necesitas."
     },
     {
       "id": "estirar-cuadriceps-de-pie",
-      "nombre": "Cu?driceps de pie",
+      "nombre": "Cuádriceps de pie",
       "zonas": [
         "inferior",
         "piernas"
       ],
       "musculos": [
-        "cu?driceps"
+        "cuádriceps"
       ],
       "lugares": [
         "fuera de casa",
@@ -328,7 +328,7 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "De pie, flexiona una rodilla y sujeta el empeine llevando el tal?n suavemente hacia el gl?teo. Suelta y repite; cambia de pierna. Puedes apoyarte en una pared.",
+      "descripcion": "De pie, flexiona una rodilla y sujeta el empeine llevando el talón suavemente hacia el glúteo. Suelta y repite; cambia de pierna. Puedes apoyarte en una pared.",
       "errores": "Evita arquear la espalda, tirar del pie o forzar la rodilla."
     },
     {
@@ -353,7 +353,7 @@
       "peso": null,
       "gif": null,
       "descripcion": "De pie, levanta una pierna con la rodilla flexionada unos 90 grados. Dibuja círculos en el aire con la rodilla, moviendo la cadera despacio y con control. Repite con la otra pierna.",
-      "errores": "Ap?yate si necesitas equilibrio y utiliza un recorrido c?modo."
+      "errores": "Apóyate si necesitas equilibrio y utiliza un recorrido cómodo."
     },
     {
       "id": "movimientos-cadera",
@@ -372,12 +372,12 @@
       "material": [
         "peso corporal"
       ],
-      "repeticiones": "10 ? 10 ? 1",
+      "repeticiones": "10 × 10 × 1",
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Movimientos de cadera: 10 ? 10 ? 1.",
-      "errores": "Haz los movimientos despacio y dentro de un recorrido c?modo."
+      "descripcion": "Movimientos de cadera: 10 × 10 × 1.",
+      "errores": "Haz los movimientos despacio y dentro de un recorrido cómodo."
     },
     {
       "id": "movimientos-natatorios",
@@ -401,7 +401,7 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Hacia delante, T-pose compuesta, pose inversa y hacia atr?s.",
+      "descripcion": "Hacia delante, T-pose compuesta, pose inversa y hacia atrás.",
       "errores": "Hazlos con control y sin forzar el recorrido."
     },
     {
@@ -424,7 +424,7 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Tumbado boca arriba, eleva brazos y piernas con las rodillas flexionadas. Aleja despacio un brazo y la pierna contraria, vuelve al centro y alterna. Mant?n el tronco estable y respira.",
+      "descripcion": "Tumbado boca arriba, eleva brazos y piernas con las rodillas flexionadas. Aleja despacio un brazo y la pierna contraria, vuelve al centro y alterna. Mantén el tronco estable y respira.",
       "errores": "Evita arquear la zona lumbar o forzar la amplitud; acorta el recorrido si lo necesitas."
     },
     {
@@ -449,7 +449,7 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Pierna hacia arriba: 5 c?rculos horarios de tobillo, 5 antihorarios, 5 hacia dentro, 5 hacia fuera y 5 extensiones m?ximas. Repite con la otra pierna.",
+      "descripcion": "Pierna hacia arriba: 5 círculos horarios de tobillo, 5 antihorarios, 5 hacia dentro, 5 hacia fuera y 5 extensiones máximas. Repite con la otra pierna.",
       "errores": "Haz los movimientos suavemente, sin forzar la pierna ni el tobillo."
     },
     {
@@ -473,8 +473,8 @@
       "series": null,
       "peso": null,
       "gif": null,
-      "descripcion": "Tumbado boca arriba, con las rodillas flexionadas y juntas, d?jalas caer suavemente hacia la izquierda y vuelve al centro; despu?s hacia la derecha y vuelve al centro.",
-      "errores": "No fuerces la amplitud; deja que el movimiento sea c?modo y controlado."
+      "descripcion": "Tumbado boca arriba, con las rodillas flexionadas y juntas, déjalas caer suavemente hacia la izquierda y vuelve al centro; después hacia la derecha y vuelve al centro.",
+      "errores": "No fuerces la amplitud; deja que el movimiento sea cómodo y controlado."
     }
   ],
   "megasets": [

@@ -76,15 +76,20 @@ function renderSession() {
   const megaset = data.megasets.find(item => item.id === megasetSelect.value);
   const container = $('#session-content');
   if (!megaset) { container.innerHTML = '<p class="empty">No hay megasets disponibles.</p>'; return; }
-  const items = megaset.sets.flatMap(id => data.sets.find(set => set.id === id)?.ejercicios || []).map(exerciseById).filter(Boolean);
+  const items = megaset.sets.flatMap((id, setIndex) => {
+    const set = data.sets.find(item => item.id === id);
+    const exercises = (set?.ejercicios || []).map(exerciseById).filter(Boolean);
+    return exercises.map((exercise, exerciseIndex) => ({ exercise, set, setIndex, exerciseIndex, setTotal: exercises.length }));
+  });
   if (!items.length) { container.innerHTML = '<p class="empty">Este megaset no tiene ejercicios disponibles.</p>'; return; }
   const saved = readNext(megaset.id);
-  const index = Math.max(0, items.findIndex(exercise => exercise.id === saved));
+  const index = Math.max(0, items.findIndex(item => item.exercise.id === saved));
   const ordered = [...items.slice(index), ...items.slice(0, index)];
   const current = ordered[0];
-  container.innerHTML = `<div class="session-heading"><div><p class="eyebrow">TU SIGUIENTE EJERCICIO</p><h1 class="session-title">${esc(megaset.nombre)}</h1><p class="muted">${esc(megaset.descripcion || '')}</p></div><p class="muted">${items.length} ejercicios en rotación</p></div><article class="session-current"><p class="eyebrow">AHORA</p><h2>${esc(current.nombre)}</h2>${exerciseContent(current)}<button type="button" class="primary" id="complete">Completado · siguiente ejercicio <span aria-hidden="true">→</span></button>${storageAvailable ? '' : '<p class="storage-warning" role="status">No se puede guardar el progreso en este navegador. Se mantendrá mientras la página siga abierta.</p>'}</article><div class="queue"><h2>Después</h2><ol>${ordered.slice(1).map((exercise, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span>${esc(exercise.nombre)}</li>`).join('')}<li><span>↻</span>${esc(current.nombre)}</li></ol></div>`;
+  const setProgress = `<div class="set-progress"><div class="set-progress-label"><span>Progreso del set</span><span>${current.exerciseIndex} de ${current.setTotal}</span></div><progress value="${current.exerciseIndex}" max="${current.setTotal}" aria-label="Ejercicios completados del set"></progress></div>`;
+  container.innerHTML = `<div class="session-heading"><div><p class="eyebrow">TU SIGUIENTE EJERCICIO</p><h1 class="session-title">${esc(megaset.nombre)}</h1><p class="muted">${esc(megaset.descripcion || '')}</p></div><p class="muted">${items.length} ejercicios en rotación</p></div><article class="session-current"><div class="current-heading"><h2>${esc(current.exercise.nombre)}</h2><p class="current-set"><strong>Set ${current.setIndex + 1} de ${megaset.sets.length}</strong><span>${esc(current.set.nombre)}</span></p></div>${setProgress}${exerciseContent(current.exercise)}<button type="button" class="primary" id="complete">Completado · siguiente ejercicio <span aria-hidden="true">→</span></button>${storageAvailable ? '' : '<p class="storage-warning" role="status">No se puede guardar el progreso en este navegador. Se mantendrá mientras la página siga abierta.</p>'}</article><div class="queue"><h2>Después</h2><ol>${ordered.slice(1).map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span>${esc(item.exercise.nombre)}</li>`).join('')}<li><span>↻</span>${esc(current.exercise.nombre)}</li></ol></div>`;
   $('#complete').addEventListener('click', () => {
-    saveNext(megaset.id, items[(index + 1) % items.length].id);
+    saveNext(megaset.id, items[(index + 1) % items.length].exercise.id);
     renderSession();
     const currentCard = container.querySelector('.session-current');
     currentCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -98,13 +103,14 @@ function renderSet() {
   const checks = checkedExercises.get(set.id) || new Set();
   checkedExercises.set(set.id, checks);
   const items = set.ejercicios.map(exerciseById).filter(Boolean);
-  container.innerHTML = `<div class="session-heading"><div><p class="eyebrow">SET</p><h1 class="session-title">${esc(set.nombre)}</h1><p class="muted">${esc(set.descripcion || '')}</p></div></div>${items.length ? `<div class="set-list">${items.map(exercise => `<article class="session-current set-exercise"><h2>${esc(exercise.nombre)}</h2>${exerciseContent(exercise)}<label class="set-check"><input type="checkbox" data-exercise="${esc(exercise.id)}" ${checks.has(exercise.id) ? 'checked' : ''}><span>Completado</span></label></article>`).join('')}</div>` : '<p class="empty">Este set no tiene ejercicios disponibles.</p>'}`;
+  container.innerHTML = `<div class="session-heading"><div><p class="eyebrow">SET</p><h1 class="session-title">${esc(set.nombre)}</h1><p class="muted">${esc(set.descripcion || '')}</p></div></div>${items.length ? `<div class="set-list">${items.map(exercise => `<article class="session-current set-exercise${checks.has(exercise.id) ? ' is-completed' : ''}"><h2>${esc(exercise.nombre)}</h2>${exerciseContent(exercise)}<label class="set-check"><input type="checkbox" data-exercise="${esc(exercise.id)}" ${checks.has(exercise.id) ? 'checked' : ''}><span>Completado</span></label></article>`).join('')}</div>` : '<p class="empty">Este set no tiene ejercicios disponibles.</p>'}`;
 }
 $('#set-content').addEventListener('change', event => {
   const input = event.target.closest('input[data-exercise]');
   if (!input) return;
   const checks = checkedExercises.get(setSelect.value);
   if (input.checked) checks.add(input.dataset.exercise); else checks.delete(input.dataset.exercise);
+  input.closest('.set-exercise').classList.toggle('is-completed', input.checked);
 });
 catalogButton.addEventListener('click', () => setMode('catalog'));
 sessionButton.addEventListener('click', () => setMode('session'));
