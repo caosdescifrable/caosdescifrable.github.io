@@ -1,6 +1,7 @@
 ﻿const $ = selector => document.querySelector(selector);
-const catalog = $('#catalog'), session = $('#session'), detail = $('#detail');
-const catalogButton = $('#catalog-mode'), sessionButton = $('#session-mode');
+const catalog = $('#catalog'), session = $('#session'), setsSection = $('#sets'), detail = $('#detail');
+const catalogButton = $('#catalog-mode'), sessionButton = $('#session-mode'), setButton = $('#set-mode');
+const setSelect = $('#set-select');
 const search = $('#search'), exercisesEl = $('#exercises'), tagGroups = $('#tag-groups');
 const filterMode = $('#filter-mode'), matchMode = $('#match-mode'), megasetSelect = $('#megaset');
 const selected = new Set();
@@ -10,8 +11,9 @@ const categories = [
   ['lugares', 'Lugar', ['casa', 'gym']],
   ['material', 'Material', ['mancuernas', 'cintas', 'mochilas', 'peso corporal']]
 ];
-let data = { ejercicios: [], megasets: [] }, currentMode = 'session', storageAvailable = true;
+let data = { ejercicios: [], sets: [], megasets: [] }, currentMode = 'session', storageAvailable = true;
 const transientProgress = {};
+const checkedExercises = new Map();
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es');
 const allTags = exercise => categories.flatMap(([key]) => exercise[key] || []);
@@ -46,15 +48,18 @@ function renderExercises() {
 function setMode(mode) {
   currentMode = mode;
   document.querySelector('.apps-link').hidden = false;
-  catalog.hidden = mode !== 'catalog'; session.hidden = mode !== 'session'; detail.hidden = true;
+  catalog.hidden = mode !== 'catalog'; session.hidden = mode !== 'session'; setsSection.hidden = mode !== 'sets'; detail.hidden = true;
   catalogButton.classList.toggle('active', mode === 'catalog'); sessionButton.classList.toggle('active', mode === 'session');
   catalogButton.setAttribute('aria-pressed', String(mode === 'catalog')); sessionButton.setAttribute('aria-pressed', String(mode === 'session'));
+  setButton.classList.toggle('active', mode === 'sets');
+  setButton.setAttribute('aria-pressed', String(mode === 'sets'));
   if (mode === 'session') renderSession();
+  if (mode === 'sets') renderSet();
 }
 function showDetail(id) {
   const exercise = exerciseById(id); if (!exercise) return;
   document.querySelector('.apps-link').hidden = true;
-  catalog.hidden = true; session.hidden = true; detail.hidden = false;
+  catalog.hidden = true; session.hidden = true; setsSection.hidden = true; detail.hidden = false;
   detail.innerHTML = `<div class="detail-header"><button class="back" type="button">← &nbsp; Volver a ejercicios</button><p class="eyebrow">EJERCICIO</p><h1>${esc(exercise.nombre)}</h1></div><div class="detail-content">${exerciseContent(exercise)}</div>`;
   window.scrollTo(0, 0); detail.querySelector('.back').focus();
 }
@@ -71,7 +76,7 @@ function renderSession() {
   const megaset = data.megasets.find(item => item.id === megasetSelect.value);
   const container = $('#session-content');
   if (!megaset) { container.innerHTML = '<p class="empty">No hay megasets disponibles.</p>'; return; }
-  const items = megaset.ejercicios.map(exerciseById).filter(Boolean);
+  const items = megaset.sets.flatMap(id => data.sets.find(set => set.id === id)?.ejercicios || []).map(exerciseById).filter(Boolean);
   if (!items.length) { container.innerHTML = '<p class="empty">Este megaset no tiene ejercicios disponibles.</p>'; return; }
   const saved = readNext(megaset.id);
   const index = Math.max(0, items.findIndex(exercise => exercise.id === saved));
@@ -86,8 +91,25 @@ function renderSession() {
     $('#complete').focus({ preventScroll: true });
   });
 }
+function renderSet() {
+  const set = data.sets.find(item => item.id === setSelect.value);
+  const container = $('#set-content');
+  if (!set) { container.innerHTML = '<p class="empty">No hay sets disponibles.</p>'; return; }
+  const checks = checkedExercises.get(set.id) || new Set();
+  checkedExercises.set(set.id, checks);
+  const items = set.ejercicios.map(exerciseById).filter(Boolean);
+  container.innerHTML = `<div class="session-heading"><div><p class="eyebrow">SET</p><h1 class="session-title">${esc(set.nombre)}</h1><p class="muted">${esc(set.descripcion || '')}</p></div></div>${items.length ? `<div class="set-list">${items.map(exercise => `<article class="session-current set-exercise"><h2>${esc(exercise.nombre)}</h2>${exerciseContent(exercise)}<label class="set-check"><input type="checkbox" data-exercise="${esc(exercise.id)}" ${checks.has(exercise.id) ? 'checked' : ''}><span>Completado</span></label></article>`).join('')}</div>` : '<p class="empty">Este set no tiene ejercicios disponibles.</p>'}`;
+}
+$('#set-content').addEventListener('change', event => {
+  const input = event.target.closest('input[data-exercise]');
+  if (!input) return;
+  const checks = checkedExercises.get(setSelect.value);
+  if (input.checked) checks.add(input.dataset.exercise); else checks.delete(input.dataset.exercise);
+});
 catalogButton.addEventListener('click', () => setMode('catalog'));
 sessionButton.addEventListener('click', () => setMode('session'));
+setButton.addEventListener('click', () => setMode('sets'));
+setSelect.addEventListener('change', renderSet);
 search.addEventListener('input', renderExercises);
 filterMode.addEventListener('change', () => { $('#tag-f-filters').hidden = !filterMode.checked; renderExercises(); });
 matchMode.addEventListener('change', renderExercises);
@@ -101,8 +123,10 @@ exercisesEl.addEventListener('click', event => { const button = event.target.clo
 detail.addEventListener('click', event => { if (event.target.closest('.back')) { setMode(currentMode); window.scrollTo(0, 0); } });
 megasetSelect.addEventListener('change', renderSession);
 fetch('exercises.json').then(response => { if (!response.ok) throw Error('No se pudo cargar'); return response.json(); }).then(result => {
-  if (!Array.isArray(result.ejercicios) || !Array.isArray(result.megasets)) throw Error('Formato incorrecto');
+  if (!Array.isArray(result.ejercicios) || !Array.isArray(result.sets) || !Array.isArray(result.megasets)) throw Error('Formato incorrecto');
   data = result; renderTags(); renderExercises();
   megasetSelect.innerHTML = data.megasets.map(item => `<option value="${esc(item.id)}">${esc(item.nombre)}</option>`).join('');
+  setSelect.innerHTML = data.sets.map(item => `<option value="${esc(item.id)}">${esc(item.nombre)}</option>`).join('');
   if (currentMode === 'session') renderSession();
-}).catch(() => { exercisesEl.innerHTML = '<p class="empty">No se han podido cargar los ejercicios. Comprueba que exercises.json esté disponible.</p>'; $('#session-content').innerHTML = '<p class="empty">No se han podido cargar los megasets.</p>'; });
+  if (currentMode === 'sets') renderSet();
+}).catch(() => { exercisesEl.innerHTML = '<p class="empty">No se han podido cargar los ejercicios. Comprueba que exercises.json esté disponible.</p>'; $('#session-content').innerHTML = '<p class="empty">No se han podido cargar los megasets.</p>'; $('#set-content').innerHTML = '<p class="empty">No se han podido cargar los sets.</p>'; });

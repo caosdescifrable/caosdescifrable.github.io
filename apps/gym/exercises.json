@@ -482,16 +482,42 @@
       "id": "casa-mochilas",
       "nombre": "Casa con mochilas",
       "descripcion": "Una vuelta por todo el cuerpo con peso corporal, mochilas y botellas.",
+      "sets": [
+        "brazos-pecho",
+        "espalda",
+        "core-pierna"
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "id": "brazos-pecho",
+      "nombre": "Brazos + pecho",
+      "descripcion": "Ejercicios de brazos, pecho y hombros.",
       "ejercicios": [
         "flexiones",
         "curl-martillo",
         "extension-triceps",
         "press-hombros",
-        "elevacion-lateral",
-        "plancha-frontal",
+        "elevacion-lateral"
+      ]
+    },
+    {
+      "id": "espalda",
+      "nombre": "Espalda",
+      "descripcion": "Ejercicios de espalda.",
+      "ejercicios": [
         "remo-mochila",
         "elevaciones-t-y",
-        "nadador-boca-abajo",
+        "nadador-boca-abajo"
+      ]
+    },
+    {
+      "id": "core-pierna",
+      "nombre": "Core + pierna",
+      "descripcion": "Ejercicios de core y piernas.",
+      "ejercicios": [
+        "plancha-frontal",
         "puente-gluteos",
         "sentarse-levantarse"
       ]
