@@ -65,13 +65,13 @@
       "ingredientes": [
         {
           "nombre": "Arroz",
-          "cantidad": 4,
+          "cantidad": 3,
           "unidad": "cucharadas soperas colmadas"
         },
         {
           "nombre": "Agua",
-          "cantidad": 120,
-          "unidad": "ml aproximadamente (algo más de medio vaso de 200 ml)"
+          "cantidad": 90,
+          "unidad": "ml aproximadamente (algo menos de medio vaso de 200 ml)"
         }
       ],
       "preparacion": [
